@@ -5,7 +5,7 @@ import logo from './logo.svg';
 import { useState } from 'react';
 
 function App() {
-  let [rating, setRating] = useState(0);
+  let [rating, setRating] = useState(null);
   let starCount = 5;
   return (
     <div>

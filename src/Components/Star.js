@@ -3,10 +3,14 @@ import StarLogo from './StarLogo';
 import classes from './StarColors.module.css';
 
 export default function Star(props) {
-  let { status } = props;
-  console.log(status,classes);
+  let { status, setRating, starIndex } = props;
+  console.log(status, classes);
+
+  let handleClick = () => {
+    setRating(starIndex);
+  };
   return (
-    <div className={classes[status + 'Container']}>
+    <div className={classes[status + 'Container']} onClick={handleClick}>
       <StarLogo />
     </div>
   );
