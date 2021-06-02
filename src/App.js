@@ -1,6 +1,6 @@
 import './App.css';
 
-import Rating from './Components/Rating';
+import Rating from './Components/Rating/Rating';
 import logo from './logo.svg';
 import { useState } from 'react';
 
