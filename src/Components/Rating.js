@@ -4,9 +4,9 @@ import Star from './Star';
 function Rating(props) {
   let { starCount, setRating } = props;
   return (
-    <div>
+    <div className={'flexContainer'}>
       {Array.from(new Array(starCount)).map((_, index) => {
-        let evaluatedStatus = 'full';
+        let evaluatedStatus = 'fullStar'; //emptyStar
         return <Star status={evaluatedStatus} setRating={setRating} />;
       })}
     </div>
